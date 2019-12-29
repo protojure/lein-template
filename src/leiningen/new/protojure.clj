@@ -11,13 +11,14 @@
 (defn protojure
   "FIXME: write documentation"
   [name]
-  (let [data {:name name
-              :sanitized (name-to-path name)}]
+  (let [sanitized (name-to-path name)
+        data {:name name
+              :sanitized sanitized}]
     (main/info "Generating fresh 'lein new' protojure project.")
     (->files data
              ["project.clj" (render "project.clj" data)]
              ["Makefile" (render "Makefile" data)]
              ["README.md" (render "README.md" data)]
-             ["src/{{name}}/server.clj" (render "server.clj" data)]
-             ["src/{{name}}/service.clj" (render "service.clj" data)]
+             ["src/{{sanitized}}/server.clj" (render "server.clj" data)]
+             ["src/{{sanitized}}/service.clj" (render "service.clj" data)]
              ["resources/addressbook.proto" (render "addressbook.proto" data)])))
