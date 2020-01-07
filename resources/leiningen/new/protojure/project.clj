@@ -9,7 +9,8 @@
                  [io.pedestal/pedestal.service "0.5.7"]
 
                  ;; -- PROTOC-GEN-CLOJURE --
-                 [protojure "1.1.0"]
+                 [protojure "1.2.0"]
+                 [protojure/google.protobuf "0.9.1"]
 
                  ;; -- PROTOC_GEN_CLOJURE CLIENT DEP --
                  [org.eclipse.jetty.http2/http2-client "9.4.25.v20191220"]
