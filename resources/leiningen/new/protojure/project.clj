@@ -9,7 +9,7 @@
                  [io.pedestal/pedestal.service "0.5.7"]
 
                  ;; -- PROTOC-GEN-CLOJURE --
-                 [protojure "1.2.0"]
+                 [protojure "1.2.2"]
                  [protojure/google.protobuf "0.9.1"]
 
                  ;; -- PROTOC_GEN_CLOJURE CLIENT DEP --
