@@ -3,7 +3,7 @@
   :url "http://example.com/FIXME"
   :license {:name "Apache License 2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0"
-            :year 2019
+            :year 2020
             :key "apache-2.0"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [io.pedestal/pedestal.service "0.5.7"]
