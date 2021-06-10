@@ -55,9 +55,9 @@ In order to invoke the hello endpoint:
 4. In the repl, run:
 
 ```
-(use 'com.example.addressbook.Greeter)
+(use 'com.example.addressbook.Greeter.client)
 (use 'protojure.grpc.client.providers.http2)
-@(call-Hello @(connect {:uri (str "http://localhost:" 8080)}) {:name "John Doe"})
+@(Hello @(connect {:uri (str "http://localhost:" 8080)}) {:name "John Doe"})
 ```
 
 You should see output like the below in the repl after the 3rd command:
