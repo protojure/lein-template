@@ -9,28 +9,28 @@
                  [io.pedestal/pedestal.service "0.5.9"]
 
                  ;; -- PROTOC-GEN-CLOJURE --
-                 [protojure "1.6.1"]
-                 [protojure/google.protobuf "0.9.1"]
+                 [protojure "1.7.0"]
+                 [protojure/google.protobuf "1.0.0"]
 
                  ;; -- PROTOC_GEN_CLOJURE CLIENT DEPS --
-                 [org.eclipse.jetty.http2/http2-client "11.0.5"]
-                 [org.eclipse.jetty/jetty-alpn-java-client "11.0.5"]
+                 [org.eclipse.jetty.http2/http2-client "11.0.7"]
+                 [org.eclipse.jetty/jetty-alpn-java-client "11.0.7"]
                  ;; -- Jetty Client Dep --
                  [org.ow2.asm/asm "9.1"]
 
                  ;; Include Undertow for supporting HTTP/2 for GRPCs
-                 [io.undertow/undertow-core "2.2.8.Final"]
-                 [io.undertow/undertow-servlet "2.2.8.Final"]
+                 [io.undertow/undertow-core "2.2.14.Final"]
+                 [io.undertow/undertow-servlet "2.2.14.Final"]
                  ;; And of course, protobufs
-                 [com.google.protobuf/protobuf-java "3.17.3"]
+                 [com.google.protobuf/protobuf-java "3.19.1"]
                  ;; logging
                  [com.taoensso/timbre "5.1.2"]
                  [com.fzakaria/slf4j-timbre "0.3.21"]
 
-                 [ch.qos.logback/logback-classic "1.2.3" :exclusions [org.slf4j/slf4j-api]]
-                 [org.slf4j/jul-to-slf4j "1.7.30"]
-                 [org.slf4j/jcl-over-slf4j "1.7.30"]
-                 [org.slf4j/log4j-over-slf4j "1.7.30"]]
+                 [ch.qos.logback/logback-classic "1.2.9"]
+                 [org.slf4j/jul-to-slf4j "1.7.32"]
+                 [org.slf4j/jcl-over-slf4j "1.7.32"]
+                 [org.slf4j/log4j-over-slf4j "1.7.32"]]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]
   :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "{{name}}.server/run-dev"]}
