@@ -2,13 +2,7 @@
   (:gen-class) ; for -main method in uberjar
   (:require [io.pedestal.http :as server]
             [io.pedestal.http.route :as route]
-            [{{name}}.service :as service]
-            [taoensso.timbre :as log]
-            [taoensso.timbre.appenders.core :as appenders]))
-
-(log/set-config! {:level :debug
-                  :ns-whitelist  ["{{name}}.*"]
-                  :appenders {:println (appenders/println-appender {:stream :auto})}})
+            [{{name}}.service :as service]))
 
 ;; This is an adapted service map, that can be started and stopped
 ;; From the REPL you can call server/start and server/stop on this service
