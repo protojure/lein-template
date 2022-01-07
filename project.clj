@@ -3,7 +3,7 @@
 ;;
 ;; SPDX-License-Identifier: Apache-2.0
 
-(defproject protojure/lein-template "2.0.0-SNAPSHOT"
+(defproject protojure/lein-template "2.0.0"
   :description "A leiningen template for creating protojure projects"
   :url "http://github.com/protojure/lein-template"
   :license {:name "Apache License 2.0"
