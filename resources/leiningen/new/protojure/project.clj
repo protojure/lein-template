@@ -10,12 +10,16 @@
 
                  ;; -- PROTOC-GEN-CLOJURE --
                  [io.github.protojure/grpc-server "2.0.6"]
+                 [io.github.protojure/grpc-client "2.0.6"]
                  [io.github.protojure/google.protobuf "2.0.0"]
 
                  [ch.qos.logback/logback-classic "1.2.9"]
                  [org.slf4j/jul-to-slf4j "1.7.32"]
                  [org.slf4j/jcl-over-slf4j "1.7.32"]
-                 [org.slf4j/log4j-over-slf4j "1.7.32"]]
+                 [org.slf4j/log4j-over-slf4j "1.7.32"]
+
+                 [com.taoensso/timbre "4.10.0"]
+                 [com.fzakaria/slf4j-timbre "0.3.21"]]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]
   :profiles {:dev {:aliases {"run-dev" ["trampoline" "run" "-m" "{{name}}.server/run-dev"]}
