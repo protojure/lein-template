@@ -21,4 +21,5 @@
              ["README.md" (render "README.md" data)]
              ["src/{{sanitized}}/server.clj" (render "server.clj" data)]
              ["src/{{sanitized}}/service.clj" (render "service.clj" data)]
+             ["test/{{sanitized}}/service_test.clj" (render "service_test.clj" data)]
              ["resources/addressbook.proto" (render "addressbook.proto" data)])))

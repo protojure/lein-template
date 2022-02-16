@@ -68,6 +68,10 @@ You should see output like the below in the repl after the 3rd command:
 
 ```
 
+## Running the tests
+
+No other prerequisite exists for running `lein test` other than having successfully run `make`
+
 ## Making this project your own:
 
 From here, a probable next step is adding your own `.proto` Protocol Buffer
