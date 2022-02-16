@@ -9,7 +9,7 @@
                  [io.pedestal/pedestal.service "0.5.9"]
 
                  ;; -- PROTOC-GEN-CLOJURE --
-                 [io.github.protojure/grpc-server "2.0.1"]
+                 [io.github.protojure/grpc-server "2.0.6"]
                  [io.github.protojure/google.protobuf "2.0.0"]
 
                  [ch.qos.logback/logback-classic "1.2.9"]

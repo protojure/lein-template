@@ -51,6 +51,7 @@ The `.proto` definition file can be found at `./resources/addressbook.proto`
 
 In order to invoke the hello endpoint:
 
+2. Add `[io.github.protojure/grpc-client "2.0.6"]` as a dependency to your `project.clj`
 3. Run `lein repl` while in the project root (Have `lein run` executing in a separate terminal session, as above)
 4. In the repl, run:
 
